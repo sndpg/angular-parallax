@@ -1,0 +1,62 @@
+.fixed-image {
+  top: 10rem;
+  z-index: -1;
+  position: absolute;
+  height: 400px;
+  width: 100%;
+  background-image: url('../../assets/winter1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-dir-container {
+  top: 50rem;
+  z-index: -1;
+  position: absolute;
+  height: 400px;
+  width: 100%;
+  background-image: url('../../assets/autumn1.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-container {
+  perspective: -1px;
+  top: 50rem;
+  z-index: -1;
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto
+}
+
+.parallax-container__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax-container__layer--base {
+  transform: translateZ(0);
+}
+
+.parallax-container__layer--first {
+  height: 100%;
+  width: 100%;
+  background-image: url('../../assets/autumn1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateZ(-1px) scale(2);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.far-below {
+  position: absolute;
+  top: 200rem;
+}
